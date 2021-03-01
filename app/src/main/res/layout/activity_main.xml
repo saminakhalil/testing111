@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/fram"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#754CAF50">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/abc" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/wel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Welcome To"
+        android:textAllCaps="true"
+        android:textColor="#F70925"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+
+        android:text="Computer World"
+        android:textAllCaps="true"
+        android:textColor="#F70925"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/computer"
+        android:layout_margin="22dp"
+        android:text="Email"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/computer"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="100dp"
+        android:hint="email"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginStart="22dp"
+        android:text="Password"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/ed22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed1"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="100dp"
+
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed22"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:layout_margin="7dp"
+        android:onClick="Login"/>
+
+    <TextView
+        android:id="@+id/stror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#F70925"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/login"/>
+
+    <Button
+        android:id="@+id/fb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="facebook"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/login"
+        android:layout_marginStart="22dp"
+        android:textColor="#3F51B5"
+        android:onClick="facebook"/>
+
+    <Button
+        android:id="@+id/gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:layout_below="@id/login"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#F70925"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitter"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/login"
+        android:layout_marginStart="300dp"
+        android:textColor="#3F51B5"/>
+    <TextView
+        android:id="@+id/textaccont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont you have an account"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F70925"
+        android:layout_below="@id/gmail"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sing-up"
+        android:layout_below="@id/textaccont"
+        android:layout_margin="7dp"/>
+
+
+
+
+</RelativeLayout>
