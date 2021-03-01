@@ -15,12 +15,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initilization();
+
+    }
+
+    private void getDetails() {
         email = findViewById(R.id.ed1);
         password = findViewById(R.id.ed22);
-    }
-    
 
-        public void Login(View view){
+    }
+    public void initilization(){
+
+    }
+
+    public void Login(View view){
 
 
             String email1=email.getText().toString();
